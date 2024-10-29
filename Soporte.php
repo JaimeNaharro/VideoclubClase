@@ -17,11 +17,13 @@ declare(strict_types=1);
             }
             public function getNumero():int
             {
+                
                 return $this->numero;
             }
             public function muestraResumen():string
             {
-                return "Precio: "+getPrecio();
+                $res="Precio: ".$this->getPrecio()."Numero: ".$this->getNumero();
+                return $res;
             }
     }
 ?>
