@@ -6,11 +6,7 @@ declare(strict_types=1);
             public string $titulo,
             protected int $numero,
             private float $precio
-            
             ){}
-            
-
-            
             public function getPrecio():float
             {
                 return $this->precio;
@@ -25,7 +21,7 @@ declare(strict_types=1);
             }
             public function muestraResumen():string
             {
-                return "";
+                return "Precio: "+getPrecio();
             }
     }
 ?>
